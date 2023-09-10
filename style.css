@@ -1,0 +1,269 @@
+/* Fonte */
+@font-face {
+    font-family: Inter;
+    src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("./assets/fonts/Inter-ExtraBold.ttf");
+}
+
+
+
+
+/* Corpo */
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: #222233;
+    color: #FFF;
+
+    position: relative;
+    z-index: 0;
+
+    height: 100vh;
+}
+
+
+
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #222233;
+    height: 60px;
+
+    width: 100%;
+}
+
+.header-shadow {
+    box-shadow: 0 2px 20px #111122;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+
+    transition: color .3s;
+    color: #DDD;
+}
+
+.link:hover {
+    color: #FFF;
+}
+
+
+
+
+/* Perfil */
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+    margin-right: 1rem;
+}
+
+section {
+    height: calc(100vh - 120px);
+
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+
+    width: 80%;
+
+    transition: all .5s;
+}
+
+section:not(#perfil) {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.animate-section {
+    opacity: 1;
+
+    width: 100%;
+}
+
+.button {
+    background-color: #8800EE;
+    border: #9900FF 1px solid;
+    color: #FFF;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    border-radius: 7px;
+    padding: 7px 12px;
+
+    transition: all .25s;
+}
+
+.button:hover {
+    background-color: #6600CC;
+    border: #6600CC 1px solid;
+}
+
+.button:active {
+    background-color: #4400AA;
+    border: #4400AA 1px solid;
+}
+
+#sobre-mim {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 42pt;
+    font-family: "Inter Bold", Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Conhecimentos */
+h1 {
+    font-family: "Inter Bold", Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    margin-bottom: 1rem;
+}
+
+.logos-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s;
+}
+
+.logo:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.lang-logo {
+    width: 75%;
+    height: 75%;
+}
+
+
+/* Cursos */
+p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Projetos */
+h5 a, p a {
+    color: #FFF;
+    text-decoration: none;
+
+    transition: color .3s;
+}
+
+h5 a:hover, p a:hover {
+    color: #DDD
+}
+
+.card {
+    background-color: #222233;
+    color: #FFF;
+    border-color: #333344;
+
+    margin-bottom: 20px;
+
+    width: 300px;
+
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: scale(105%);
+
+    cursor: pointer;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-img-top {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+/* Footer */
+footer {
+    height: 60px;
+
+    margin-top: 1rem;
+
+    background-color: #111122;
+}
